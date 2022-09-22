@@ -355,6 +355,9 @@ for (let i = 0; i < numberOfNumber; i++) {
 console.log(`Il y a ${positif} nombre positif et ${negatif} nombre négatif`);
 */
 
+//Exo 18
+
+/*
 const arrayOne = [4, 8, 7, 9, 1, 5, 4, 6];
 const arrayTwo = [7, 6, 5, 2, 1, 3, 7, 4];
 let arr = [];
@@ -363,4 +366,19 @@ for (let i = 0; i <= arrayOne.length; i++) {
   arr.push(arrayOne[i] + arrayTwo[i])
 }
 
-console.log(arrayOne)
+console.log(arrayOne);
+*/
+
+//Exo 19
+
+const arrayOne = [4, 8, 7, 12];
+const arrayTwo = [3, 6];
+let nbr = 0;
+
+for (let i = 0; i < arrayTwo.length; i++) {
+  for (let o = 0; o < arrayOne.length; o++) {
+    nbr += arrayTwo[i] * arrayOne[o];
+  }
+}
+
+console.log(nbr);
