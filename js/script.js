@@ -403,11 +403,13 @@ console.log(arr.join("-"));
 */
 
 //Exo 21
+
+/*
 let years = 20;
 function Placement(number, count, taux) {
   let total = (taux * number) / 100;
   let result = 0;
-  result = total;
+  result = number + total;
   count++;
   console.log(result)
   if (count < years) {
@@ -419,3 +421,16 @@ function Placement(number, count, taux) {
 }
 
 console.log(Placement(10000, 0, 4));
+*/
+
+//Exo 22
+
+function calc (num1, num2, operateur) {
+  if ((num2 !== 0) && (operateur !== "/")) {
+    return eval(`${num1} ${operateur} ${num2}`);
+  } else {
+    return "Votre code n'est pas valide";
+  }
+}
+
+alert(calc (5, 3, "*"));
