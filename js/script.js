@@ -425,6 +425,7 @@ console.log(Placement(10000, 0, 4));
 
 //Exo 22
 
+/*
 function calc (num1, num2, operateur) {
   if ((num2 !== 0) && (operateur !== "/")) {
     return eval(`${num1} ${operateur} ${num2}`);
@@ -434,3 +435,16 @@ function calc (num1, num2, operateur) {
 }
 
 alert(calc (5, 3, "*"));
+*/
+
+//Exo 3
+
+function pluriel(word) {
+  const number = 0;
+  if (number > 1) {
+    word = word + "s";
+  }
+  return word;
+}
+
+console.log(pluriel("Hello"));
