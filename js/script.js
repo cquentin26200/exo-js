@@ -437,14 +437,45 @@ function calc (num1, num2, operateur) {
 alert(calc (5, 3, "*"));
 */
 
-//Exo 3
+//Exo 23
 
+/*
 function pluriel(word) {
-  const number = 0;
+  const number = 2;
   if (number > 1) {
-    word = word + "s";
+    if (!word.endsWith("s") || !word.endsWith("z") || !word.endsWith("x")) {
+       if (word.endsWith("eu") || word.endsWith("ou")) {
+        word += "x";
+      } else if (word.endsWith("val")) {
+        word += "eaux"
+      } else if (word.endsWith("al")) {
+        word += "aux"
+      } else {
+        word += "s";
+      }
+    } 
   }
   return word;
 }
 
-console.log(pluriel("Hello"));
+console.log(pluriel("petit"));
+*/
+
+//Exo 24
+
+/*
+const result = prompt("Your number");
+
+const regxp = /^-?[0-9]{1,3}$/
+
+console.log(result.match(regxp));
+*/
+
+//Exo 25
+
+function changeNumber (number) {
+  console.log(number.toString().replace(".", ","));
+}
+
+changeNumber(23.6);
+
