@@ -473,9 +473,41 @@ console.log(result.match(regxp));
 
 //Exo 25
 
+/*
 function changeNumber (number) {
   console.log(number.toString().replace(".", ","));
 }
 
 changeNumber(23.6);
+*/
 
+//Exo 26
+
+/*
+function regexp(word) {
+  return word.match(/[^.]*$/)[0];
+}
+
+console.log(regexp("www.google.com"));
+*/
+
+//Exo 27
+
+/*
+function date() {
+  const birthday = new Date();
+  const convert = birthday.toUTCString();
+  return `${birthday.getUTCDay()}/${birthday.getUTCMonth()}/${birthday.getUTCFullYear()}`;
+}
+
+console.log(date());
+*/
+
+//Exo 28
+
+function date() {
+  const today = new Date();
+  console.log(`aujourd'hui : ${today.getDate()}/${today.getMonth()}/${today.getFullYear()}\n demain : ${today.getDate() +1}/${today.getMonth()}/${today.getFullYear()}`);
+}
+
+date()
