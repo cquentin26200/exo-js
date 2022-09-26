@@ -371,14 +371,51 @@ console.log(arrayOne);
 
 //Exo 19
 
+/*
 const arrayOne = [4, 8, 7, 12];
 const arrayTwo = [3, 6];
 let nbr = 0;
 
-for (let i = 0; i < arrayTwo.length; i++) {
-  for (let o = 0; o < arrayOne.length; o++) {
-    nbr += arrayTwo[i] * arrayOne[o];
+for (let arrayOnes of arrayOne) {
+  for (let arrayTwos of arrayTwo) {
+    nbr += arrayTwos * arrayOnes;
   }
 }
 
 console.log(nbr);
+*/
+
+//Exo 20
+
+/*
+const arr = [];
+const numberOdd = () => {
+  for (let i = 0; i <= 20; i++) {
+    if (i % 2 === 0) {
+      arr.push(i);
+    }
+  }
+}
+
+numberOdd()
+
+console.log(arr.join("-"));
+*/
+
+//Exo 21
+let years = 20;
+function Placement(number, count, taux) {
+  let total = (taux * number) / 100;
+  let result = 0;
+  result = total;
+  count++;
+  console.log(result)
+  if (count < years) {
+    return Placement(result, count, taux);
+  }
+  else {
+    return result;
+  }
+}
+
+console.log(Placement(10000, 0, 4));
