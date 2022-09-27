@@ -505,9 +505,16 @@ console.log(date());
 
 //Exo 28
 
+const result = parseInt(prompt("Your date"));
+
 function date() {
   const today = new Date();
-  console.log(`aujourd'hui : ${today.getDate()}/${today.getMonth()}/${today.getFullYear()}\n demain : ${today.getDate() +1}/${today.getMonth()}/${today.getFullYear()}`);
+  const newDay = new Date();
+  newDay.setDate(today.getDate()+result);
+
+  alert(
+    `aujourd'hui nous somme le ${today.getDate()}/0${today.getMonth()+1}/${today.getFullYear()} et dans ${result} jours\nnous serons le ${newDay.getDate()}/${newDay.getMonth()+1}/${newDay.getFullYear()}`
+  );
 }
 
-date()
+date();
